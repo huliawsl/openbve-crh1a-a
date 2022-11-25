@@ -1,4 +1,4 @@
-﻿OPENBVE17250
+﻿OPENBVE18230
 #ACCELERATION
 0.4,0.4,10,10,1.8
 0.6,0.6,20,20,1.6
@@ -9,16 +9,18 @@
 2,2,100,100,0.6
 2.16,2.16,100,100,0.5
 #PERFORMANCE
-3.2              ; Deceleration
+4              ; Deceleration
 0.89           ; CoefficientOfStaticFriction
 0              ; Reserved (not used)
 0.0025         ; CoefficientOfRollingResistance
 0.3            ; AerodynamicDragCoefficient
 #DELAY
-0.1,0,0,0      ; DelayPowerUp
-0.1,0,0,0      ; DelayPowerDown
-0.1,0,0        ; DelayBrakeUp
-0.1,0,0        ; DelayBrakeDown
+0.1,0,0,0,0,0,0,0; DelayPowerUp
+0.1,0,0,0,0,0,0,0; DelayPowerDown
+0.1,0,0,0,0,0,0; DelayBrakeUp
+0.1,0,0,0,0,0,0; DelayBrakeDown
+0              ; ElectricBrakeDelayUp
+0              ; ElectricBrakeDelayDown
 0,0,0,0,0,0,0,0; DelayLocoBrakeUp (1.5.3.4+)
 0,0,0,0,0,0,0,0; DelayLocoBrakeDown (1.5.3.4+)
 #MOVE
@@ -56,7 +58,7 @@
 0              ; DriverCar
 #CAR
 65             ; MotorCarMass
-4             ; NumberOfMotorCars
+4              ; NumberOfMotorCars
 60             ; TrailerCarMass
 4              ; NumberOfTrailerCars
 23.2           ; LengthOfACar
@@ -65,7 +67,7 @@
 3.8            ; HeightOfACar
 1.5            ; CenterOfGravityHeight
 5              ; ExposedFrontalArea
-5            ; UnexposedFrontalArea
+5              ; UnexposedFrontalArea
 #DEVICE
 -1             ; Ats
 0              ; Atc
